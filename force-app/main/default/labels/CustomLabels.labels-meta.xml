@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>MensagemTipoPrecoDuplicado</fullName>
+        <categories>PriceTypeLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Mensagem de duplicidade de referencias de tipo de preço</shortDescription>
+        <value>Já existe um preço de tipo de unidade com essa mesma tabela de vendas e com esse mesmo tipo de unidade</value>
+    </labels>
+    <labels>
+        <fullName>ErroQuantidadeUnidadeMaior</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Qtd de unidades gerada maior que qtd da torre</shortDescription>
+        <value>A quantidade de unidades geradas é maior que a quantidade disponível na torre</value>
+    </labels>
+    <labels>
+        <fullName>Atencao</fullName>
+        <categories>General</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Atencao</shortDescription>
+        <value>warning</value>
+    </labels>
+    <labels>
+        <fullName>Sucesso</fullName>
+        <categories>General</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Sucesso</shortDescription>
+        <value>success</value>
+    </labels>
+    <labels>
+        <fullName>Erro</fullName>
+        <categories>General</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Erro</shortDescription>
+        <value>error</value>
+    </labels>
+    <labels>
+        <fullName>SucessoSalvarUnidade</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Unidades salvas com sucesso</shortDescription>
+        <value>As unidades foram salvas com sucesso</value>
+    </labels>
+    <labels>
+        <fullName>ErroSalvarUnidades</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Erro ao salvar unidades</shortDescription>
+        <value>Erro ao salvar</value>
+    </labels>
+    <labels>
+        <fullName>TipoRegistroVaga</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Tipo de registro vaga</shortDescription>
+        <value>Vaga</value>
+    </labels>
+    <labels>
+        <fullName>TipoRegistroApto</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Tipo de registro apartamento</shortDescription>
+        <value>Apartamento</value>
+    </labels>
+    <labels>
+        <fullName>Disponivel</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto cisponivel</shortDescription>
+        <value>Disponível</value>
+    </labels>
+    <labels>
+        <fullName>Centena</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto centena</shortDescription>
+        <value>Centena</value>
+    </labels>
+    <labels>
+        <fullName>Disponiveis</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto disponiveis</shortDescription>
+        <value>Disponiveis</value>
+    </labels>
+    <labels>
+        <fullName>Selecionadas</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto selecionadas</shortDescription>
+        <value>Selecionadas</value>
+    </labels>
+    <labels>
+        <fullName>Limpar</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto limpar</shortDescription>
+        <value>Limpar</value>
+    </labels>
+    <labels>
+        <fullName>Adicionar</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto adicionar</shortDescription>
+        <value>Adicionar</value>
+    </labels>
+    <labels>
+        <fullName>Nenhum</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto nenhum</shortDescription>
+        <value>Nenhum</value>
+    </labels>
+    <labels>
+        <fullName>Salvar</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto salvar</shortDescription>
+        <value>Salvar</value>
+    </labels>
+    <labels>
+        <fullName>TextoAjudaGerador</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto de ajuda do gerador de unidades</shortDescription>
+        <value>Informe os dados das unidades que deseja gerar</value>
+    </labels>
+    <labels>
+        <fullName>TiposUnidade</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto tipos de unidades</shortDescription>
+        <value>Tipos de Unidade</value>
+    </labels>
+    <labels>
+        <fullName>LimparDadosSelecionados</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto limpar dados</shortDescription>
+        <value>Limpar os dados selecionados</value>
+    </labels>
+    <labels>
+        <fullName>AndarInicial</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto andar inicial</shortDescription>
+        <value>Andar inicial</value>
+    </labels>
+    <labels>
+        <fullName>AndarFinal</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto andar final</shortDescription>
+        <value>Andar final</value>
+    </labels>
+    <labels>
+        <fullName>PrumadaInicial</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto prumada inicial</shortDescription>
+        <value>Prumada inicial</value>
+    </labels>
+    <labels>
+        <fullName>PrumadaFinal</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto prumada final</shortDescription>
+        <value>Prumada final</value>
+    </labels>
+    <labels>
+        <fullName>CriarUnidades</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto criar unidades</shortDescription>
+        <value>Criar unidades</value>
+    </labels>
+    <labels>
+        <fullName>PreviaDisplay</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto previa</shortDescription>
+        <value>Prévia</value>
+    </labels>
+    <labels>
+        <fullName>UnidadesGeradasDisplay</fullName>
+        <categories>UnitGeneratorLabel</categories>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto unidades geradas</shortDescription>
+        <value>unidades geradas</value>
+    </labels>
+</CustomLabels>

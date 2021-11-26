@@ -1,0 +1,99 @@
+.main {
+  border: 1px solid #d6dee0;
+  border-radius: 10px;
+  padding: 0px 8px 20px 10px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.rows {
+  display: grid;
+  grid-template-columns: auto  auto;
+  grid-template-rows: auto auto;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 8px;
+}
+
+.rows2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+
+lightning-input {
+  margin-right: 10px;
+}
+
+
+
+.button {
+  margin-top: 24px;
+}
+
+.toggleText {
+  padding-left: 10px
+}
+
+.toggle1 {
+  left: 4.5rem;
+}
+
+.toggle2 {
+  left: 9.5rem;
+}
+
+.icon {
+  height: 100%;
+  margin: 10px;
+}
+
+h2 {
+  margin-top: 19px;
+  font-size: 18px;
+}
+
+.top {
+  display: flex;
+  position: relative;
+}
+
+.top > lightning-button {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.middle {
+  width: 100%;
+  height: 33%;
+  
+}
+
+.middleRow {
+  display: inline-block;
+  width: 100%;
+}
+
+lightning-dual-listbox {
+  width: 30rem;
+  margin-bottom: 20px;
+}
+
+.bottom {
+  width: 100%;
+  height: 33%;
+  margin-top: 19px;
+  margin-bottom: 40px;  
+}
+
+.bottomButtons {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}

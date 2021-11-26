@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SomenteUmTipoDesconto</fullName>
+    <active>true</active>
+    <description>Mostra uma mensagem de erro se os dois tipos de desconto forem preenchidos</description>
+    <errorConditionFormula>!ISBLANK(DescontoPercentual__c) &amp;&amp; !ISBLANK(DescontoMoeda__c)</errorConditionFormula>
+    <errorMessage>Sómente um tipo de desconto pode ser selecionado</errorMessage>
+</ValidationRule>

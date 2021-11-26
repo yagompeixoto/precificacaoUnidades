@@ -1,0 +1,61 @@
+<template>
+  <div if:true={createUnitPrices}>
+    <section class='main'>
+      <section class='top'>
+        <div class='title'>
+          <lightning-icon class='icon' icon-name='action:adjust_value'></lightning-icon>
+          <h2>Precificação de unidades</h2>
+        </div>
+        <lightning-button label='Atualizar preços' onclick={changePage}></lightning-button>
+      </section>
+      <section class='middle'>
+        <div>
+          <p>Tipo de Unidade</p>
+          <lightning-dual-listbox name='Precificação de Unidades'
+                                  options={unitTypes}
+                                  value={selectedUnitTypes}
+                                  onchange={handleSelectedUnitTypes}></lightning-dual-listbox>
+        </div>
+        <lightning-input type='number' formatter='currency' value={priceUptadeValue} onchange={storePriceValue} label='Preço do Tipo de Unidade'></lightning-input>
+        <lightning-button class='slds-float_right' label='Aplicar' onclick={createDisplayData}></lightning-button>
+      </section>  
+      <section class='bottom'>
+        <lightning-layout-item padding="around-small">
+          <lightning-datatable key-field = 'Id'
+                              hide-checkbox-column = true
+                              columns={insertColumns}
+                              data={unitPriceType}></lightning-datatable>
+        </lightning-layout-item>
+        <lightning-button class='slds-float_right bottomButtons' label='Criar Preços de Tipo de Unidade' disabled={disableSave} variant='brand' onclick={savePrices}></lightning-button>
+        <lightning-button class='slds-float_right bottomButtons' label='Limpar' onclick={clearFields}></lightning-button>
+      </section>      
+    </section>
+  </div>
+  <div if:false={createUnitPrices}>
+    <section class='main'>
+      <section class='top'>
+        <div class='title'>
+          <lightning-icon class='icon' icon-name='action:adjust_value'></lightning-icon>
+          <h2>Precificação de unidades</h2>
+        </div>
+        <lightning-button label='Cadastrar preços' onclick={changePage}></lightning-button>
+      </section>
+      <div class='rows2'>
+        <lightning-input type='number' formatter='percent-fixed' value={priceUpdatePercent} onchange={storePricePercent} label='Indice de Atualização (%)'></lightning-input>
+        <lightning-input type='number' formatter='currency' value={priceUptadeNumber} onchange={storePriceNumber} label='Valor da Atualização - Nominal'></lightning-input>
+        <lightning-button class='button'
+                          label='Aplicar'
+                          onclick={handleUnitTypesPriceUpdate}></lightning-button>
+      </div>    
+      <section class='bottom' onload={handleLoad}>
+        <lightning-datatable key-field = 'Id'
+                            data={updatePrices}
+                            hide-checkbox-column = true
+                            columns={updateColumns}>
+        </lightning-datatable>
+          <lightning-button label='Atualizar Preços Tabela' disabled={disableSave} variant='brand' class='slds-float_right bottomButtons' onclick={updatePriceTables}></lightning-button>
+          <lightning-button label='Limpar' class='slds-float_right bottomButtons' onclick={clearFields}></lightning-button>
+      </section>
+    </section>
+  </div>
+</template>
