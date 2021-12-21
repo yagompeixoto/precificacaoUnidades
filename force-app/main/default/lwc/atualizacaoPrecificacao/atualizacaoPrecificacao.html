@@ -1,0 +1,59 @@
+<template>
+  <div if:true={genericPage}>
+    <section class='main'>
+      <div class='top'>
+        <lightning-icon class='icon' icon-name='action:adjust_value'></lightning-icon>
+        <h2>Precificação de unidades</h2>
+        <div class='rows'>   
+          <p class='toggleText'>Trazer tabelas ativas?</p>      
+          <p class='toggleText'>Trazer tabelas com vigência futura?</p>  
+          <lightning-input class='toggle1' type="toggle" variant="label-stacked" message-toggle-active='' message-toggle-inactive='' checked onchange={verifyActiveTablesChange}>
+          </lightning-input>   
+          <lightning-input class='toggle2' type="toggle" variant="label-stacked" message-toggle-active='' message-toggle-inactive='' checked onchange={verifyFutureTablesChange}>
+          </lightning-input>
+        </div>
+      </div>
+      <div class='middle'>
+        <lightning-layout>
+          <lightning-layout-item padding="around-small">
+            <p>Empreendimentos</p>
+            <lightning-dual-listbox options={enterprises}
+                                    value={selectedEnterprises}
+                                    onchange={handleSelectedEnterprises}>
+            </lightning-dual-listbox>
+          </lightning-layout-item>
+          <lightning-layout-item padding="around-small">
+            <p>Tabelas de Vendas</p>
+            <lightning-dual-listbox options={salesTables}
+                                    value={selectedPriceTables}
+                                    onchange={handleSelectedPriceTables}>
+            </lightning-dual-listbox>
+          </lightning-layout-item>
+        </lightning-layout>
+        <div class='rows2'>
+          <lightning-input type='number' formatter='percent-fixed' value={priceUpdatePercent} onchange={storePricePercent} label='Indice de Atualização (%)'></lightning-input>
+          <lightning-input type='number' formatter='currency' value={priceUptadeNumber} onchange={storePriceNumber} label='Valor da Atualização - Nominal'></lightning-input>
+          <lightning-button class='button'
+                            label='Aplicar'
+                            onclick={handleDataTableCreation}></lightning-button>
+        </div>
+      </div>
+      
+      <div class='bottom' onload={handleLoad}>
+        <lightning-datatable key-field = 'Id'
+                            data={priceValues}
+                            hide-checkbox-column = true
+                            columns={columns}>
+        </lightning-datatable>
+          <lightning-button label='Atualizar Preços Tabela' disabled={disableSave} variant='brand' class='bottomButtons slds-float_right' onclick={updatePriceTables}></lightning-button>
+          <lightning-button label='Limpar' class='bottomButtons slds-float_right' onclick={clearValues}></lightning-button>
+      </div>
+    </section>
+  </div>  
+  <div if:true={enterprisePage}>
+    <c-atualizacao-precificacao-empreendimento record-id={recordId}></c-atualizacao-precificacao-empreendimento>
+  </div>
+  <div if:true={salesTablePage}>
+    <c-atualizacao-precificacao-tabela-venda record-id={recordId}></c-atualizacao-precificacao-tabela-venda>
+  </div>
+</template>

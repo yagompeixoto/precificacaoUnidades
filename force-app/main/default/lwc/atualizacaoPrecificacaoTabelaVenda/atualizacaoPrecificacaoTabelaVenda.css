@@ -1,0 +1,77 @@
+.main {
+  border: 1px solid #d6dee0;
+  border-radius: 10px;
+  padding: 0px 8px 10px 10px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.middle {
+  width: 100%;
+  height: 33%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.middle > lightning-input {
+  margin-top: 6rem;
+}
+
+.middle > lightning-button {
+  margin-top: 7.5rem;
+}
+
+.top {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.top > lightning-button {
+  margin-top: 0.5rem;
+}
+
+.title {
+  display:inline-flex;
+}
+
+.icon {
+  margin: 10px;
+}
+
+.bottom {
+  width: 100%;
+  height: 33%;
+  margin-top: 19px;
+  margin-bottom: 40px;  
+}
+
+.bottomButtons {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.rows2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 40px;
+}
+
+.rows2 > lightning-button {
+  padding-top: 25px;
+}
+
+h2 {
+  margin-top: 19px;
+  font-size: 18px;
+}
+
+lightning-dual-listbox {
+  width: 40rem;
+  margin-bottom: 20px;
+}
+
+lightning-input {
+  margin-right: 10px;
+}

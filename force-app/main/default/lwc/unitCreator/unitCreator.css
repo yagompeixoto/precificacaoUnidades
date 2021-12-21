@@ -1,0 +1,72 @@
+.selectableContent {
+  border: 1px solid #d6dee0;
+  border-radius: 10px;
+  padding: 0px 8px 20px 8px;
+  height: 25rem;
+  margin-bottom: 10px;
+}
+
+.dualListboxDescribe {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.selectorButtons {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.initialText {
+  padding-bottom: 15px;
+}
+
+b {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.datatable {
+  border-top: 1px solid #d6dee0;
+  border-bottom: 1px solid #d6dee0;
+  padding-bottom: 30px;
+}
+
+.datatabelInitialText {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.column1 {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 25rem;
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 25rem;
+}
+
+.column3 {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 25rem;
+}
+
+.row {
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
+.slds-align_absolute-center {
+  padding-top: 10px;
+  border-top: 1px solid #d6dee0;
+}

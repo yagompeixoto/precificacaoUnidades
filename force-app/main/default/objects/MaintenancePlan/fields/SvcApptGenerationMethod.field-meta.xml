@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SvcApptGenerationMethod</fullName>
+    <inlineHelpText>Especifique como os compromissos de serviços são gerados quando mais de um ativo está associado ao plano de manutenção e o método de geração da ordem de trabalho é um item de linha da ordem de trabalho por ativo.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

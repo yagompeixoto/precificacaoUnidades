@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConsideraSinalTotalmenteVista__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo responsável por indicar se esta tabela aceita pagamento totalmente à vista ou não</description>
+    <externalId>false</externalId>
+    <label>Considera sinal totalmente à vista?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

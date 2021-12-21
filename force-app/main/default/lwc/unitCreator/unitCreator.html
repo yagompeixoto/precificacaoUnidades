@@ -1,0 +1,89 @@
+<template>
+  <div class='initialText'>
+    <span>
+      <lightning-icon icon-name='custom:custom24' title='Torre'></lightning-icon>
+      <b>Gerador de Unidades</b>
+    </span>
+  </div>
+  <div class='selectorButtons'>
+    <lightning-button class='slds-float_left'
+                      label={customLabels.Limpar}
+                      title={customLabels.LimparDadosSelecionados}
+                      onclick={clearList}></lightning-button>
+    &nbsp;&nbsp;&nbsp;
+    <lightning-button class='slds-float_left'
+                      label={customLabels.Adicionar}
+                      title=''></lightning-button>
+  </div>
+  <div class='selectableContent'>
+    <div class='column1' >
+      <span class='dualListboxDescribe'>
+        {customLabels.TiposUnidade}
+        &nbsp;
+        <lightning-helptext content={customLabels.TextoAjudaGerador}></lightning-helptext>
+      </span>
+      <lightning-dual-listbox
+        name={customLabels.TiposUndidade}
+        source-label={customLabels.Disponiveis}
+        selected-label={customLabels.Selecionadas}
+        options={unitTypesToDisplay}
+        value={selectedUnitTypes}
+        onchange={handleSelectedUnitTypes}></lightning-dual-listbox>
+    </div>
+    <div class='column2'>
+      <p style='margin-top:6rem'>Andar</p>
+      <p style='margin-top:6rem'>Prumada</p>
+    </div>
+    <div class='column3'>
+      <div class='row'>
+        <p style='margin-top:3rem'>Inicial</p>
+        <p style='margin-top:3rem'>Final</p>
+      </div>
+      <div class='row'>
+        <lightning-combobox data-id='firstFloor'
+                            name={customLabels.AndarInicial}
+                            value={firstFloor}
+                            placeholder={customLabels.Nenhum}
+                            options={floorOptions}
+                            onchange={handleFirstFloor}></lightning-combobox>
+                
+        <lightning-combobox data-id='lastFloor'
+                            name='Andar final'
+                            value={lastFloor}
+                            placeholder={customLabels.Nenhum}
+                            options={floorOptions}
+                            onchange={handleLastFloor}></lightning-combobox>
+      </div>  
+      <div class='row'>
+        <p style='margin-top:3rem'>Inicial</p>
+        <p style='margin-top:3rem'>Final</p>
+      </div>    
+      <div class='row'>
+        <lightning-combobox data-id='firstFloorUnit'
+                            name={customLabels.PrumadaInicial}
+                            value={firstFloorUnit}
+                            placeholder={customLabels.Nenhum}
+                            options={floorUnitOptions}
+                            onchange={handleFirstFloorUnit}></lightning-combobox>
+
+        <lightning-combobox data-id='lastFloorUnit'
+                            name={customLabels.PrumadaFinal}
+                            value={lastFloorUnit}
+                            placeholder={customLabels.Nenhum}
+                            options={floorUnitOptions}
+                            onchange={handleLastFloorUnit}></lightning-combobox>
+      </div>
+    </div>
+  </div>
+  <div class='datatable'>
+    <p class='datatabelInitialText'> {customLabels.PreviaDisplay} - {unitListSize} {customLabels.UnidadesGeradasDisplay}</p>
+    <lightning-datatable  key-field = 'Id'
+                          data={unitList}
+                          hide-checkbox-column = true
+                          columns={columns}></lightning-datatable>
+  </div>
+  <lightning-button class='slds-align_absolute-center'
+                    label={customLabels.Salvar}
+                    title={customLabels.CriarUnidades}
+                    onclick={saveList}></lightning-button>
+</template>
